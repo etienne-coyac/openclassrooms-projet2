@@ -271,6 +271,10 @@ header {
   margin-bottom: 5px;
   font-size: 16px;
   font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .card-text {
   margin-top: 0;
@@ -349,21 +353,15 @@ footer {
 /* TABLETTE */
 /* ******** */
 @media (max-width: 992px) {
-  .nav-filters {
+  /* containers */
+  header, .nav-filters,.hebergements-container,.activites-container, footer{
     width: 90%;
   }
   .hebergements-container {
-    width: 90%;
     flex-direction: column;
-  }
-  .activites-container {
-    width: 90%;
   }
   .hebergements {
     width: 100%;
-  }
-  footer {
-    width: 90%;
   }
   .famous-hebergements {
     margin-top: 50px;
