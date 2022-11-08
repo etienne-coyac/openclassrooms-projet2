@@ -24,10 +24,12 @@ main {
 /* HEADER */
 header {
   max-width: 1400px;
-  width: 95%;
+  width: 100%;
   margin-top: 2px;
   display: flex;
   justify-content: space-between;
+  padding: 0 2.5%;
+  box-sizing: border-box;
 }
 .header-logo-container {
   height: 100px;
@@ -263,7 +265,7 @@ header {
 .card-body {
   padding: 10px;
 }
-.card-horizontal .card-body{
+.card-horizontal .card-body {
   width: 60%;
 }
 .card-title {
@@ -355,7 +357,11 @@ footer {
 /* ******** */
 @media (max-width: 992px) {
   /* containers */
-  header, .nav-filters,.hebergements-container,.activites-container, footer{
+  header,
+  .nav-filters,
+  .hebergements-container,
+  .activites-container,
+  footer {
     width: 90%;
   }
   .hebergements-container {
@@ -478,7 +484,7 @@ footer {
     display: none;
   }
   /* ACTIVITIES */
-  .activites-container h2{
+  .activites-container h2 {
     margin-left: 20px;
     margin-bottom: 0;
   }
